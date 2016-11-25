@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		3A410D6F1DE82C9A00E19313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D6E1DE82C9A00E19313 /* main.m */; };
 		3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D711DE82C9A00E19313 /* AppDelegate.m */; };
-		3A410D751DE82C9A00E19313 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D741DE82C9A00E19313 /* ViewController.m */; };
 		3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D761DE82C9A00E19313 /* Main.storyboard */; };
 		3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D791DE82C9A00E19313 /* Assets.xcassets */; };
 		3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D7B1DE82C9A00E19313 /* LaunchScreen.storyboard */; };
 		3A410D881DE82C9A00E19313 /* Lighter_View_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D871DE82C9A00E19313 /* Lighter_View_ControllerTests.m */; };
 		3A410D931DE82C9A00E19313 /* Lighter_View_ControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */; };
+		3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA11DE82ED900E19313 /* PhotosViewController.m */; };
+		3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A410DA21DE82ED900E19313 /* PhotosViewController.xib */; };
+		3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		3A410D6E1DE82C9A00E19313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A410D701DE82C9A00E19313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A410D711DE82C9A00E19313 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A410D731DE82C9A00E19313 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A410D741DE82C9A00E19313 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A410D771DE82C9A00E19313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A410D791DE82C9A00E19313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A410D7C1DE82C9A00E19313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		3A410D8E1DE82C9A00E19313 /* Lighter-View-ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lighter-View-ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lighter_View_ControllerUITests.m; sourceTree = "<group>"; };
 		3A410D941DE82C9A00E19313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A410DA01DE82ED900E19313 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		3A410DA11DE82ED900E19313 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		3A410DA21DE82ED900E19313 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		3A410DA61DE8340B00E19313 /* KFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFArrayDataSource.h; sourceTree = "<group>"; };
+		3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFArrayDataSource.m; sourceTree = "<group>"; };
+		3A410DAA1DE834A500E19313 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		3A410D6C1DE82C9A00E19313 /* Lighter-View-Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A410DA91DE8349600E19313 /* Configs */,
+				3A410DA51DE833AA00E19313 /* DataSource */,
 				3A410D701DE82C9A00E19313 /* AppDelegate.h */,
 				3A410D711DE82C9A00E19313 /* AppDelegate.m */,
-				3A410D731DE82C9A00E19313 /* ViewController.h */,
-				3A410D741DE82C9A00E19313 /* ViewController.m */,
+				3A410DA01DE82ED900E19313 /* PhotosViewController.h */,
+				3A410DA11DE82ED900E19313 /* PhotosViewController.m */,
+				3A410DA21DE82ED900E19313 /* PhotosViewController.xib */,
 				3A410D761DE82C9A00E19313 /* Main.storyboard */,
 				3A410D791DE82C9A00E19313 /* Assets.xcassets */,
 				3A410D7B1DE82C9A00E19313 /* LaunchScreen.storyboard */,
@@ -138,6 +147,23 @@
 				3A410D941DE82C9A00E19313 /* Info.plist */,
 			);
 			path = "Lighter-View-ControllerUITests";
+			sourceTree = "<group>";
+		};
+		3A410DA51DE833AA00E19313 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3A410DA61DE8340B00E19313 /* KFArrayDataSource.h */,
+				3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		3A410DA91DE8349600E19313 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				3A410DAA1DE834A500E19313 /* PrefixHeader.pch */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */,
+				3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */,
 				3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */,
 				3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */,
 			);
@@ -276,8 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A410D751DE82C9A00E19313 /* ViewController.m in Sources */,
 				3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */,
+				3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */,
+				3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */,
 				3A410D6F1DE82C9A00E19313 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Lighter-View-Controller/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = "Lighter-View-Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-Controller";
@@ -438,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Lighter-View-Controller/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = "Lighter-View-Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-Controller";
