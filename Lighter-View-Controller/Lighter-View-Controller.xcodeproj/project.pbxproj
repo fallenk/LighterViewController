@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A410D6F1DE82C9A00E19313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D6E1DE82C9A00E19313 /* main.m */; };
+		3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D711DE82C9A00E19313 /* AppDelegate.m */; };
+		3A410D751DE82C9A00E19313 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D741DE82C9A00E19313 /* ViewController.m */; };
+		3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D761DE82C9A00E19313 /* Main.storyboard */; };
+		3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D791DE82C9A00E19313 /* Assets.xcassets */; };
+		3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D7B1DE82C9A00E19313 /* LaunchScreen.storyboard */; };
+		3A410D881DE82C9A00E19313 /* Lighter_View_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D871DE82C9A00E19313 /* Lighter_View_ControllerTests.m */; };
+		3A410D931DE82C9A00E19313 /* Lighter_View_ControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A410D841DE82C9A00E19313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A410D621DE82C9A00E19313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A410D691DE82C9A00E19313;
+			remoteInfo = "Lighter-View-Controller";
+		};
+		3A410D8F1DE82C9A00E19313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A410D621DE82C9A00E19313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A410D691DE82C9A00E19313;
+			remoteInfo = "Lighter-View-Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A410D6A1DE82C9A00E19313 /* Lighter-View-Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lighter-View-Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A410D6E1DE82C9A00E19313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A410D701DE82C9A00E19313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A410D711DE82C9A00E19313 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A410D731DE82C9A00E19313 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A410D741DE82C9A00E19313 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A410D771DE82C9A00E19313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A410D791DE82C9A00E19313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A410D7C1DE82C9A00E19313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A410D7E1DE82C9A00E19313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A410D831DE82C9A00E19313 /* Lighter-View-ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lighter-View-ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A410D871DE82C9A00E19313 /* Lighter_View_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lighter_View_ControllerTests.m; sourceTree = "<group>"; };
+		3A410D891DE82C9A00E19313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A410D8E1DE82C9A00E19313 /* Lighter-View-ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lighter-View-ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lighter_View_ControllerUITests.m; sourceTree = "<group>"; };
+		3A410D941DE82C9A00E19313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A410D671DE82C9A00E19313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D801DE82C9A00E19313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D8B1DE82C9A00E19313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A410D611DE82C9A00E19313 = {
+			isa = PBXGroup;
+			children = (
+				3A410D6C1DE82C9A00E19313 /* Lighter-View-Controller */,
+				3A410D861DE82C9A00E19313 /* Lighter-View-ControllerTests */,
+				3A410D911DE82C9A00E19313 /* Lighter-View-ControllerUITests */,
+				3A410D6B1DE82C9A00E19313 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A410D6B1DE82C9A00E19313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A410D6A1DE82C9A00E19313 /* Lighter-View-Controller.app */,
+				3A410D831DE82C9A00E19313 /* Lighter-View-ControllerTests.xctest */,
+				3A410D8E1DE82C9A00E19313 /* Lighter-View-ControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A410D6C1DE82C9A00E19313 /* Lighter-View-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A410D701DE82C9A00E19313 /* AppDelegate.h */,
+				3A410D711DE82C9A00E19313 /* AppDelegate.m */,
+				3A410D731DE82C9A00E19313 /* ViewController.h */,
+				3A410D741DE82C9A00E19313 /* ViewController.m */,
+				3A410D761DE82C9A00E19313 /* Main.storyboard */,
+				3A410D791DE82C9A00E19313 /* Assets.xcassets */,
+				3A410D7B1DE82C9A00E19313 /* LaunchScreen.storyboard */,
+				3A410D7E1DE82C9A00E19313 /* Info.plist */,
+				3A410D6D1DE82C9A00E19313 /* Supporting Files */,
+			);
+			path = "Lighter-View-Controller";
+			sourceTree = "<group>";
+		};
+		3A410D6D1DE82C9A00E19313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A410D6E1DE82C9A00E19313 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A410D861DE82C9A00E19313 /* Lighter-View-ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A410D871DE82C9A00E19313 /* Lighter_View_ControllerTests.m */,
+				3A410D891DE82C9A00E19313 /* Info.plist */,
+			);
+			path = "Lighter-View-ControllerTests";
+			sourceTree = "<group>";
+		};
+		3A410D911DE82C9A00E19313 /* Lighter-View-ControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */,
+				3A410D941DE82C9A00E19313 /* Info.plist */,
+			);
+			path = "Lighter-View-ControllerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A410D691DE82C9A00E19313 /* Lighter-View-Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A410D971DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-Controller" */;
+			buildPhases = (
+				3A410D661DE82C9A00E19313 /* Sources */,
+				3A410D671DE82C9A00E19313 /* Frameworks */,
+				3A410D681DE82C9A00E19313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lighter-View-Controller";
+			productName = "Lighter-View-Controller";
+			productReference = 3A410D6A1DE82C9A00E19313 /* Lighter-View-Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A410D821DE82C9A00E19313 /* Lighter-View-ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A410D9A1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerTests" */;
+			buildPhases = (
+				3A410D7F1DE82C9A00E19313 /* Sources */,
+				3A410D801DE82C9A00E19313 /* Frameworks */,
+				3A410D811DE82C9A00E19313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A410D851DE82C9A00E19313 /* PBXTargetDependency */,
+			);
+			name = "Lighter-View-ControllerTests";
+			productName = "Lighter-View-ControllerTests";
+			productReference = 3A410D831DE82C9A00E19313 /* Lighter-View-ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A410D8D1DE82C9A00E19313 /* Lighter-View-ControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A410D9D1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerUITests" */;
+			buildPhases = (
+				3A410D8A1DE82C9A00E19313 /* Sources */,
+				3A410D8B1DE82C9A00E19313 /* Frameworks */,
+				3A410D8C1DE82C9A00E19313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A410D901DE82C9A00E19313 /* PBXTargetDependency */,
+			);
+			name = "Lighter-View-ControllerUITests";
+			productName = "Lighter-View-ControllerUITests";
+			productReference = 3A410D8E1DE82C9A00E19313 /* Lighter-View-ControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A410D621DE82C9A00E19313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = KFallen;
+				TargetAttributes = {
+					3A410D691DE82C9A00E19313 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E8MNXPQG5U;
+						ProvisioningStyle = Automatic;
+					};
+					3A410D821DE82C9A00E19313 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E8MNXPQG5U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A410D691DE82C9A00E19313;
+					};
+					3A410D8D1DE82C9A00E19313 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E8MNXPQG5U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A410D691DE82C9A00E19313;
+					};
+				};
+			};
+			buildConfigurationList = 3A410D651DE82C9A00E19313 /* Build configuration list for PBXProject "Lighter-View-Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A410D611DE82C9A00E19313;
+			productRefGroup = 3A410D6B1DE82C9A00E19313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A410D691DE82C9A00E19313 /* Lighter-View-Controller */,
+				3A410D821DE82C9A00E19313 /* Lighter-View-ControllerTests */,
+				3A410D8D1DE82C9A00E19313 /* Lighter-View-ControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A410D681DE82C9A00E19313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */,
+				3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */,
+				3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D811DE82C9A00E19313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D8C1DE82C9A00E19313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A410D661DE82C9A00E19313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A410D751DE82C9A00E19313 /* ViewController.m in Sources */,
+				3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */,
+				3A410D6F1DE82C9A00E19313 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D7F1DE82C9A00E19313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A410D881DE82C9A00E19313 /* Lighter_View_ControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A410D8A1DE82C9A00E19313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A410D931DE82C9A00E19313 /* Lighter_View_ControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A410D851DE82C9A00E19313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A410D691DE82C9A00E19313 /* Lighter-View-Controller */;
+			targetProxy = 3A410D841DE82C9A00E19313 /* PBXContainerItemProxy */;
+		};
+		3A410D901DE82C9A00E19313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A410D691DE82C9A00E19313 /* Lighter-View-Controller */;
+			targetProxy = 3A410D8F1DE82C9A00E19313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A410D761DE82C9A00E19313 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A410D771DE82C9A00E19313 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A410D7B1DE82C9A00E19313 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A410D7C1DE82C9A00E19313 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A410D951DE82C9A00E19313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A410D961DE82C9A00E19313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A410D981DE82C9A00E19313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A410D991DE82C9A00E19313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A410D9B1DE82C9A00E19313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-ControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lighter-View-Controller.app/Lighter-View-Controller";
+			};
+			name = Debug;
+		};
+		3A410D9C1DE82C9A00E19313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-ControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lighter-View-Controller.app/Lighter-View-Controller";
+			};
+			name = Release;
+		};
+		3A410D9E1DE82C9A00E19313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-ControllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Lighter-View-Controller";
+			};
+			name = Debug;
+		};
+		3A410D9F1DE82C9A00E19313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E8MNXPQG5U;
+				INFOPLIST_FILE = "Lighter-View-ControllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KF.Lighter-View-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Lighter-View-Controller";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A410D651DE82C9A00E19313 /* Build configuration list for PBXProject "Lighter-View-Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A410D951DE82C9A00E19313 /* Debug */,
+				3A410D961DE82C9A00E19313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A410D971DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A410D981DE82C9A00E19313 /* Debug */,
+				3A410D991DE82C9A00E19313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A410D9A1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A410D9B1DE82C9A00E19313 /* Debug */,
+				3A410D9C1DE82C9A00E19313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A410D9D1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A410D9E1DE82C9A00E19313 /* Debug */,
+				3A410D9F1DE82C9A00E19313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A410D621DE82C9A00E19313 /* Project object */;
+}
