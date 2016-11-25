@@ -1,5 +1,5 @@
 # Lighter View Controller
-2016-11-25 制作 FallenK
+2016-11-25 Author:FallenK
 [原文地址](https://objccn.io/issue-1-1/)  [Demo实例](https://github.com/objcio/issue-1-lighter-view-controllers)
 ## 初读
 1. 刚开始接触controller瘦身，总体思想：封装代码，每部分只处理自己该处理的事情
