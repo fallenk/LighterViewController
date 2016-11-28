@@ -35,7 +35,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="photoDataLabel" destination="rOU-ti-cLT" id="wqs-Xj-uUM"/>
+                <outlet property="photoDateLabel" destination="rOU-ti-cLT" id="C9g-Us-dqX"/>
                 <outlet property="photoTitleLabel" destination="tlD-pg-L7p" id="dFZ-SY-d7S"/>
             </connections>
             <point key="canvasLocation" x="-55" y="-24"/>

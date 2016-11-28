@@ -11,6 +11,8 @@
 #import "AppDelegate.h"
 #import "Store.h"
 #import "PhotoCell.h"
+#import "Photo.h"
+#import "PhotoCell+ConfigureForPhoto.h"
 
 static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
@@ -40,22 +42,30 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
 - (void)p_setupTableView {
     
-    TableViewCellConfigureBlock tableViewCellConfigureBlock = ^(PhotoCell *cell, Photo)
+    /// 将 model 赋给 view
+    TableViewCellConfigureBlock tableViewCellConfigureBlock = ^(PhotoCell *cell, Photo* photo) {
+        [cell configureForPhoto:photo];
+    };
     
     self.tableView.delegate = self;
     //将业务逻辑移到 Model 中; 创建 Store 类
     ///Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为服务层或者仓库。
     NSArray *photos = [AppDelegate sharedDelegate].store.sortedPhotos;
 #pragma mark 把 Data Source 和其他 Protocols 分离出来
-    self.arrayDataSource = [KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:<#^(id cell, id item)aConfigureCellBlock#>
+    self.arrayDataSource = [[KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:tableViewCellConfigureBlock];
     
     self.tableView.dataSource = self.arrayDataSource;
-    
+    [self.tableView registerNib:[PhotoCell nib] forCellReuseIdentifier:PhotoCellIdentifier];
     
     [self.view addSubview:self.tableView];
     
 }
 
+
+#pragma mark - UTableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%d", indexPath.row);
+}
 
 - (UITableView *)tableView {
     if (!_tableView) {

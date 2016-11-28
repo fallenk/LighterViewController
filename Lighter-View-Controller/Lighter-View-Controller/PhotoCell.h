@@ -14,6 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *photoTitleLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *photoDataLabel;
+@property (weak, nonatomic) IBOutlet UILabel *photoDateLabel;
 
 @end

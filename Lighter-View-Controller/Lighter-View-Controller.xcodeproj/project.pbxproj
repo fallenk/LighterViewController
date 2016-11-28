@@ -23,6 +23,7 @@
 		3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */; };
 		3A9B384F1DEBD6E2001BD63A /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */; };
 		3A9B38501DEBD6E2001BD63A /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */; };
+		3AF5B2EC1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5B2EB1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		3A9B384C1DEBD6E2001BD63A /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
 		3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		3AF5B2EA1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoCell+ConfigureForPhoto.h"; sourceTree = "<group>"; };
+		3AF5B2EB1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotoCell+ConfigureForPhoto.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				3A9B384C1DEBD6E2001BD63A /* PhotoCell.h */,
 				3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */,
 				3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */,
+				3AF5B2EA1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.h */,
+				3AF5B2EB1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m */,
 				3A410DA01DE82ED900E19313 /* PhotosViewController.h */,
 				3A410DA11DE82ED900E19313 /* PhotosViewController.m */,
 				3A410DA21DE82ED900E19313 /* PhotosViewController.xib */,
@@ -342,6 +347,7 @@
 				3A9B384F1DEBD6E2001BD63A /* PhotoCell.m in Sources */,
 				3A359A271DEB019500D4F819 /* Photo.m in Sources */,
 				3A359A2A1DEB024900D4F819 /* User.m in Sources */,
+				3AF5B2EC1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m in Sources */,
 				3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */,
 				3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */,
 				3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */,
