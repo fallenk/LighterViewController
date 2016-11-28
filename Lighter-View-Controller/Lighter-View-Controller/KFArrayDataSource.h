@@ -6,10 +6,14 @@
 //  Copyright © 2016年 KFallen. All rights reserved.
 //
 
+typedef void(^TableViewCellConfigureBlock)(id cell, id item);
+
 #import <Foundation/Foundation.h>
 
 @interface KFArrayDataSource : NSObject<UITableViewDataSource>
 
-- (instancetype)arrayDataSource:(NSArray *)aItems
+- (instancetype)initWithArrayDataSource:(NSArray *)aItems cellIndentifier:(NSString *)aCellIdentifier configureCellBlock:(TableViewCellConfigureBlock)aConfigureCellBlock;
+
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -8,6 +8,11 @@
 
 #import "PhotosViewController.h"
 #import "KFArrayDataSource.h"
+#import "AppDelegate.h"
+#import "Store.h"
+#import "PhotoCell.h"
+
+static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
 @interface PhotosViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,9 +40,14 @@
 
 - (void)p_setupTableView {
     
+    TableViewCellConfigureBlock tableViewCellConfigureBlock = ^(PhotoCell *cell, Photo)
+    
     self.tableView.delegate = self;
+    //将业务逻辑移到 Model 中; 创建 Store 类
+    ///Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为服务层或者仓库。
+    NSArray *photos = [AppDelegate sharedDelegate].store.sortedPhotos;
 #pragma mark 把 Data Source 和其他 Protocols 分离出来
-    self.arrayDataSource = [KFArrayDataSource ]
+    self.arrayDataSource = [KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:<#^(id cell, id item)aConfigureCellBlock#>
     
     self.tableView.dataSource = self.arrayDataSource;
     

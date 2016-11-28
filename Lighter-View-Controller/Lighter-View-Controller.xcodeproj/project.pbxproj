@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A359A221DEAFF4C00D4F819 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A359A211DEAFF4C00D4F819 /* Store.m */; };
+		3A359A241DEB018000D4F819 /* photo-data.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3A359A231DEB018000D4F819 /* photo-data.bin */; };
+		3A359A271DEB019500D4F819 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A359A261DEB019500D4F819 /* Photo.m */; };
+		3A359A2A1DEB024900D4F819 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A359A291DEB024900D4F819 /* User.m */; };
 		3A410D6F1DE82C9A00E19313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D6E1DE82C9A00E19313 /* main.m */; };
 		3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D711DE82C9A00E19313 /* AppDelegate.m */; };
 		3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A410D761DE82C9A00E19313 /* Main.storyboard */; };
@@ -17,6 +21,8 @@
 		3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA11DE82ED900E19313 /* PhotosViewController.m */; };
 		3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A410DA21DE82ED900E19313 /* PhotosViewController.xib */; };
 		3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */; };
+		3A9B384F1DEBD6E2001BD63A /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */; };
+		3A9B38501DEBD6E2001BD63A /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A359A201DEAFF4C00D4F819 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		3A359A211DEAFF4C00D4F819 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		3A359A231DEB018000D4F819 /* photo-data.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "photo-data.bin"; sourceTree = "<group>"; };
+		3A359A251DEB019500D4F819 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		3A359A261DEB019500D4F819 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		3A359A281DEB024900D4F819 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3A359A291DEB024900D4F819 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3A410D6A1DE82C9A00E19313 /* Lighter-View-Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lighter-View-Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A410D6E1DE82C9A00E19313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A410D701DE82C9A00E19313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +70,9 @@
 		3A410DA61DE8340B00E19313 /* KFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFArrayDataSource.h; sourceTree = "<group>"; };
 		3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFArrayDataSource.m; sourceTree = "<group>"; };
 		3A410DAA1DE834A500E19313 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3A9B384C1DEBD6E2001BD63A /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A359A1F1DEAFF2F00D4F819 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A359A231DEB018000D4F819 /* photo-data.bin */,
+				3A359A201DEAFF4C00D4F819 /* Store.h */,
+				3A359A211DEAFF4C00D4F819 /* Store.m */,
+				3A359A251DEB019500D4F819 /* Photo.h */,
+				3A359A261DEB019500D4F819 /* Photo.m */,
+				3A359A281DEB024900D4F819 /* User.h */,
+				3A359A291DEB024900D4F819 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3A410D611DE82C9A00E19313 = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +137,14 @@
 		3A410D6C1DE82C9A00E19313 /* Lighter-View-Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A359A1F1DEAFF2F00D4F819 /* Model */,
 				3A410DA91DE8349600E19313 /* Configs */,
 				3A410DA51DE833AA00E19313 /* DataSource */,
 				3A410D701DE82C9A00E19313 /* AppDelegate.h */,
 				3A410D711DE82C9A00E19313 /* AppDelegate.m */,
+				3A9B384C1DEBD6E2001BD63A /* PhotoCell.h */,
+				3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */,
+				3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */,
 				3A410DA01DE82ED900E19313 /* PhotosViewController.h */,
 				3A410DA11DE82ED900E19313 /* PhotosViewController.m */,
 				3A410DA21DE82ED900E19313 /* PhotosViewController.xib */,
@@ -275,10 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9B38501DEBD6E2001BD63A /* PhotoCell.xib in Resources */,
 				3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */,
 				3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */,
 				3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */,
 				3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */,
+				3A359A241DEB018000D4F819 /* photo-data.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9B384F1DEBD6E2001BD63A /* PhotoCell.m in Sources */,
+				3A359A271DEB019500D4F819 /* Photo.m in Sources */,
+				3A359A2A1DEB024900D4F819 /* User.m in Sources */,
 				3A410D721DE82C9A00E19313 /* AppDelegate.m in Sources */,
 				3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */,
 				3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */,
+				3A359A221DEAFF4C00D4F819 /* Store.m in Sources */,
 				3A410D6F1DE82C9A00E19313 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +584,7 @@
 				3A410D991DE82C9A00E19313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A410D9A1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +593,7 @@
 				3A410D9C1DE82C9A00E19313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A410D9D1DE82C9A00E19313 /* Build configuration list for PBXNativeTarget "Lighter-View-ControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +602,7 @@
 				3A410D9F1DE82C9A00E19313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

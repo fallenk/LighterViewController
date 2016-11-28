@@ -8,12 +8,17 @@
 
 #import "AppDelegate.h"
 #import "PhotosViewController.h"
+#import "Store.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
++ (instancetype)sharedDelegate {
+    return [UIApplication sharedApplication].delegate;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -28,6 +33,16 @@
     return YES;
 }
 
+
+@synthesize store = _store;
+
+- (Store *)store
+{
+    if (_store == nil) {
+        _store = [Store store];
+    }
+    return _store;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
