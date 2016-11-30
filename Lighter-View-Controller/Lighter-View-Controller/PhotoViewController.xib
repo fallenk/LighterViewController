@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="authorLabel" destination="M8o-dn-Ky1" id="9Vl-lp-ylF"/>
                 <outlet property="photosTakenLabel" destination="3F8-LM-aAK" id="fdg-KO-DXz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ssE-CJ-XgC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

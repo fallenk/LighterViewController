@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@class Photo;
+@class Photo,PhotoDetailsViewController;
+
+@protocol DetailsViewControllerDelegate <NSObject>
+
+- (void)detailsViewController:(PhotoDetailsViewController *)detailsViewController didSelectPhotoAttributeWithKey:(NSString *)key;
+
+@end
 
 @interface PhotoDetailsViewController : UIViewController
 
 @property (nonatomic, strong) Photo *photo;
+
+@property (nonatomic, weak) id<DetailsViewControllerDelegate>  delegate;
 
 @end

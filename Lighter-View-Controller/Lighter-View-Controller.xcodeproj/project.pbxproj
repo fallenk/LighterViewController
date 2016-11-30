@@ -19,7 +19,6 @@
 		3A410D881DE82C9A00E19313 /* Lighter_View_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D871DE82C9A00E19313 /* Lighter_View_ControllerTests.m */; };
 		3A410D931DE82C9A00E19313 /* Lighter_View_ControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410D921DE82C9A00E19313 /* Lighter_View_ControllerUITests.m */; };
 		3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA11DE82ED900E19313 /* PhotosViewController.m */; };
-		3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A410DA21DE82ED900E19313 /* PhotosViewController.xib */; };
 		3A410DA81DE8340B00E19313 /* KFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */; };
 		3A9B384F1DEBD6E2001BD63A /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B384D1DEBD6E2001BD63A /* PhotoCell.m */; };
 		3A9B38501DEBD6E2001BD63A /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B384E1DEBD6E2001BD63A /* PhotoCell.xib */; };
@@ -32,6 +31,8 @@
 		3AFE75B71DEE84050008FA79 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE75B51DEE84050008FA79 /* PhotoDetailViewController.xib */; };
 		3AFE75BB1DEE85BA0008FA79 /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE75B91DEE85BA0008FA79 /* PhotoDetailsViewController.m */; };
 		3AFE75BC1DEE85BA0008FA79 /* PhotoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE75BA1DEE85BA0008FA79 /* PhotoDetailsViewController.xib */; };
+		3AFE75C01DEEACC50008FA79 /* RatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE75BE1DEEACC50008FA79 /* RatingCell.m */; };
+		3AFE75C11DEEACC50008FA79 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE75BF1DEEACC50008FA79 /* RatingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +76,6 @@
 		3A410D941DE82C9A00E19313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A410DA01DE82ED900E19313 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
 		3A410DA11DE82ED900E19313 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
-		3A410DA21DE82ED900E19313 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		3A410DA61DE8340B00E19313 /* KFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFArrayDataSource.h; sourceTree = "<group>"; };
 		3A410DA71DE8340B00E19313 /* KFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFArrayDataSource.m; sourceTree = "<group>"; };
 		3A410DAA1DE834A500E19313 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -96,6 +96,9 @@
 		3AFE75B81DEE85BA0008FA79 /* PhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailsViewController.h; sourceTree = "<group>"; };
 		3AFE75B91DEE85BA0008FA79 /* PhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailsViewController.m; sourceTree = "<group>"; };
 		3AFE75BA1DEE85BA0008FA79 /* PhotoDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailsViewController.xib; sourceTree = "<group>"; };
+		3AFE75BD1DEEACC50008FA79 /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
+		3AFE75BE1DEEACC50008FA79 /* RatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingCell.m; sourceTree = "<group>"; };
+		3AFE75BF1DEEACC50008FA79 /* RatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,13 +177,15 @@
 				3AF5B2EB1DEC625B00B8B7A4 /* PhotoCell+ConfigureForPhoto.m */,
 				3A410DA01DE82ED900E19313 /* PhotosViewController.h */,
 				3A410DA11DE82ED900E19313 /* PhotosViewController.m */,
-				3A410DA21DE82ED900E19313 /* PhotosViewController.xib */,
 				3AFE75AE1DEE80940008FA79 /* PhotoViewController.h */,
 				3AFE75AF1DEE80940008FA79 /* PhotoViewController.m */,
 				3AFE75B01DEE80940008FA79 /* PhotoViewController.xib */,
 				3AFE75B81DEE85BA0008FA79 /* PhotoDetailsViewController.h */,
 				3AFE75B91DEE85BA0008FA79 /* PhotoDetailsViewController.m */,
 				3AFE75BA1DEE85BA0008FA79 /* PhotoDetailsViewController.xib */,
+				3AFE75BD1DEEACC50008FA79 /* RatingCell.h */,
+				3AFE75BE1DEEACC50008FA79 /* RatingCell.m */,
+				3AFE75BF1DEEACC50008FA79 /* RatingCell.xib */,
 				3AFE75B31DEE84050008FA79 /* PhotoDetailViewController.h */,
 				3AFE75B41DEE84050008FA79 /* PhotoDetailViewController.m */,
 				3AFE75B51DEE84050008FA79 /* PhotoDetailViewController.xib */,
@@ -356,8 +361,8 @@
 			files = (
 				3A9B38501DEBD6E2001BD63A /* PhotoCell.xib in Resources */,
 				3AFE75B21DEE80940008FA79 /* PhotoViewController.xib in Resources */,
+				3AFE75C11DEEACC50008FA79 /* RatingCell.xib in Resources */,
 				3A410D7D1DE82C9A00E19313 /* LaunchScreen.storyboard in Resources */,
-				3A410DA41DE82ED900E19313 /* PhotosViewController.xib in Resources */,
 				3A410D7A1DE82C9A00E19313 /* Assets.xcassets in Resources */,
 				3A410D781DE82C9A00E19313 /* Main.storyboard in Resources */,
 				3AFE75BC1DEE85BA0008FA79 /* PhotoDetailsViewController.xib in Resources */,
@@ -398,6 +403,7 @@
 				3AFE75BB1DEE85BA0008FA79 /* PhotoDetailsViewController.m in Sources */,
 				3A410DA31DE82ED900E19313 /* PhotosViewController.m in Sources */,
 				3A359A221DEAFF4C00D4F819 /* Store.m in Sources */,
+				3AFE75C01DEEACC50008FA79 /* RatingCell.m in Sources */,
 				3AFE75B11DEE80940008FA79 /* PhotoViewController.m in Sources */,
 				3AFE75B61DEE84050008FA79 /* PhotoDetailViewController.m in Sources */,
 				3A410D6F1DE82C9A00E19313 /* main.m in Sources */,

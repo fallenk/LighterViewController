@@ -12,7 +12,7 @@
 #import "PhotoDetailsViewController.h"
 #import "PhotoDetailViewController.h"
 
-@interface PhotoViewController ()
+@interface PhotoViewController ()<DetailsViewControllerDelegate>
 
 @end
 
@@ -34,12 +34,22 @@
 - (void)addPhotoDetailsTableView {
     PhotoDetailsViewController *vc = [[PhotoDetailsViewController alloc] init];
     vc.photo = self.photo;
+    vc.delegate = self;
     [self addChildViewController:vc];
     CGRect frame = self.view.bounds;
     frame.origin.y = 110;
     vc.view.frame = frame;
     [self.view addSubview:vc.view];
     [vc didMoveToParentViewController:self];
+}
+
+#pragma mark OBJPhotoDetailsViewControllerDelegate
+
+- (void)detailsViewController:(PhotoDetailsViewController *)detailsViewController didSelectPhotoAttributeWithKey:(NSString *)key
+{
+    PhotoDetailViewController *detailViewController = [[PhotoDetailViewController alloc] init];
+    detailViewController.key = key;
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

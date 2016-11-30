@@ -23,7 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    PhotosViewController *vc = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
+    PhotosViewController *vc = [[PhotosViewController alloc] init];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

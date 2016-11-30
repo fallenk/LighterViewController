@@ -13,6 +13,7 @@
 #import "PhotoCell.h"
 #import "Photo.h"
 #import "PhotoCell+ConfigureForPhoto.h"
+#import "PhotoViewController.h"
 
 static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
@@ -69,6 +70,9 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSLog(@"%ld", (long)indexPath.row);
     
+    PhotoViewController *photoViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+    photoViewController.photo = [self.arrayDataSource itemAtIndexPath:indexPath];
+    [self.navigationController pushViewController:photoViewController animated:YES];
     
 }
 
