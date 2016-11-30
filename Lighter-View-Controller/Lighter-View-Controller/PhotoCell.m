@@ -18,7 +18,7 @@
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
     [super setHighlighted:highlighted animated:animated];
     if (highlighted) {
-        self.photoTitleLabel.shadowColor = [UIColor darkGrayColor];
+        self.photoTitleLabel.shadowColor = [UIColor blueColor];
         self.photoTitleLabel.shadowOffset = CGSizeMake(3, 3);
     } else {
         self.photoTitleLabel.shadowColor = nil;

@@ -16,7 +16,7 @@
 
 static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
-@interface PhotosViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface PhotosViewController ()<UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) KFArrayDataSource *arrayDataSource;
@@ -42,7 +42,8 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
 - (void)p_setupTableView {
     
-    /// 将 model 赋给 view
+#warning 3. 执行block
+    /// 将 model 赋给 view；block 使用：延迟加载，保存代码用到时再加载
     TableViewCellConfigureBlock tableViewCellConfigureBlock = ^(PhotoCell *cell, Photo* photo) {
         [cell configureForPhoto:photo];
     };
@@ -51,9 +52,10 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
     //将业务逻辑移到 Model 中; 创建 Store 类
     ///Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为服务层或者仓库。
     NSArray *photos = [AppDelegate sharedDelegate].store.sortedPhotos;
-#pragma mark 把 Data Source 和其他 Protocols 分离出来
+#warning 2. init Data Source
     self.arrayDataSource = [[KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:tableViewCellConfigureBlock];
-    
+
+#warning 1. 把 Data Source 和其他 Protocols 分离出来
     self.tableView.dataSource = self.arrayDataSource;
     [self.tableView registerNib:[PhotoCell nib] forCellReuseIdentifier:PhotoCellIdentifier];
     
@@ -64,8 +66,17 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
 
 #pragma mark - UTableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%d", indexPath.row);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSLog(@"%ld", (long)indexPath.row);
+    
+    
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80.f;
+}
+
 
 - (UITableView *)tableView {
     if (!_tableView) {

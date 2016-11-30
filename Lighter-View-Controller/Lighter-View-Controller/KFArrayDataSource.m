@@ -42,6 +42,10 @@
 
 #pragma mark UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.items.count;
 }
@@ -51,6 +55,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier
                                                             forIndexPath:indexPath];
     id item = [self itemAtIndexPath:indexPath];
+    //传入值，获取结果
     self.tableViewCellConfigureBlock(cell, item);
     return cell;
 }

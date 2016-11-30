@@ -38,7 +38,7 @@
 
 - (Store *)store
 {
-    if (_store == nil) {
+    if (!_store) {
         _store = [Store store];
     }
     return _store;
