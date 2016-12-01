@@ -5,11 +5,13 @@ Target:为了提升iOS思想
 ## 初读
 1. 刚开始接触controller瘦身，总体思想：封装代码，每部分只处理自己该处理的事情
 2. model:数据层，获取数据，业务逻辑； view：展示页面，View 代码；controller层：将model与view结合
+3. 关于瘦身VC很容易想到一点是从VC中抽离`tableView`的表示逻辑。这种思想其实与最近火热的[MVVM](http://www.cnblogs.com/ludashi/p/4211556.html)设计模式相通。就是把"逻辑部分"尽量移到Model层, 你可以认为它是一个中间层 , 所谓"逻辑部分"可以是各种delegate,网络请求,缓存,数据库,coredata等等等等 , 而controller正是用来组织串联他们，使得整个程序走通。
 
 ## 各个模块分离详解
 ### 把 Data Source 和其他 Protocols 分离出来
-把 `UITableViewDataSource` 的代码提取出来放到一个单独的类中，是为 view controller 瘦身的强大技术之一。当你多做几次，你就能总结出一些模式，并且创建出可复用的类。
-举个例，在示例项目中，有个 PhotosViewController 类，它有以下几个方法：
+1. 把 `UITableViewDataSource` 的代码提取出来放到一个单独的类中，是为 view controller 瘦身的强大技术之一。当你多做几次，你就能总结出一些模式，并且创建出可复用的类。
+2. 当需要将一个数组映射到一个tableView进行显示，这种一一对应关系可以单独写一个类ArrayDataSource，使用block或者delegate设置cell。ArrayDataSource类完全可以复用到任何需要将一个数组的内容映射到一个tableView的场景。 `ArrayDataSource`中声明block(cell,item)来初始化cell，block实现方式（item和cell如何对应）则可以在 `cell+Configure` 的category中声明。使用`ArrayDataSource`，在`ViewController`中执行`setUpTableView`即可。`setUpTableView`中实现`block`（可以是执行configure方法的方式）。使用cell类category的方式是为了避免向 `data source` 暴露 cell 的设计,说白了是为了更好得分离 view 和 model 层。 
+3. 举个例，在示例项目中，有个 `PhotosViewController` 类，它有以下几个方法：
 
 ```
 # pragma mark Pragma
@@ -72,6 +74,7 @@ self.tableView.dataSource = photosArrayDataSource;
 `tableView:commitEditingStyle:forRowAtIndexPath:`,在 `table view controllers` 之间共享。 另外就是`UICollectionViewDataSource`.
 ### 将业务逻辑移到 Model 中
 下面是 view controller（来自其他项目）中的示例代码，用来查找一个用户的目前的优先事项的列表：
+<font color=red>注</font>：尽管viewController最主要功能是处理业务逻辑，但对于一些和model联系紧密，和view关系不大（即不是model和view进行交互的逻辑）的代码应移到model中，通常是用category的处理方法，更加清晰。
 
 ```
 - (void)loadPriorities {
