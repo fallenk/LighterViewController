@@ -5,12 +5,10 @@ Target:为了提升iOS思想
 ## 初读
 1. 刚开始接触controller瘦身，总体思想：封装代码，每部分只处理自己该处理的事情
 2. model:数据层，获取数据，业务逻辑； view：展示页面，View 代码；controller层：将model与view结合
-3. 关于瘦身VC很容易想到一点是从VC中抽离`tableView`的表示逻辑。这种思想其实与最近火热的[MVVM](http://www.cnblogs.com/ludashi/p/4211556.html)设计模式相通。就是把"逻辑部分"尽量移到Model层, 你可以认为它是一个中间层 , 所谓"逻辑部分"可以是各种delegate,网络请求,缓存,数据库,coredata等等等等 , 而controller正是用来组织串联他们，使得整个程序走通。
 
 ## 各个模块分离详解
 ### 把 Data Source 和其他 Protocols 分离出来
 1. 把 `UITableViewDataSource` 的代码提取出来放到一个单独的类中，是为 view controller 瘦身的强大技术之一。当你多做几次，你就能总结出一些模式，并且创建出可复用的类。
-2. 当需要将一个数组映射到一个tableView进行显示，这种一一对应关系可以单独写一个类ArrayDataSource，使用block或者delegate设置cell。ArrayDataSource类完全可以复用到任何需要将一个数组的内容映射到一个tableView的场景。 `ArrayDataSource`中声明block(cell,item)来初始化cell，block实现方式（item和cell如何对应）则可以在 `cell+Configure` 的category中声明。使用`ArrayDataSource`，在`ViewController`中执行`setUpTableView`即可。`setUpTableView`中实现`block`（可以是执行configure方法的方式）。使用cell类category的方式是为了避免向 `data source` 暴露 cell 的设计,说白了是为了更好得分离 view 和 model 层。 
 3. 举个例，在示例项目中，有个 `PhotosViewController` 类，它有以下几个方法：
 
 ```
@@ -138,9 +136,15 @@ self.tableView.dataSource = photosArrayDataSource;
 
 关于 view controllers 和 model 对象之间的消息传递，已经有很多阐述得很好的技术（比如 KVO 和 fetched results controllers）。但是 view controllers 之间的消息传递稍微就不是那么清晰了。
 
-当一个 view controller 想把某个状态传递给多个其他 view controllers 时，就会出现这样的问题。较好的做法是把状态放到一个单独的对象里，然后把这个对象传递给其它 view controllers，它们观察和修改这个状态。这样的好处是消息传递都在一个地方（被观察的对象）进行，而且我们也不用纠结嵌套的 delegate 回调。这其实是一个复杂的主题，我们可能在未来用一个完整的话题来讨论这个主题。
+当一个 view controller 想把某个状态传递给多个其他 view controllers 时，就会出现这样的问题。较好的做法是把状态放到一个单独的对象里，然后把这个对象传递给其它 view controllers，它们观察和修改这个状态。这样的好处是消息传递都在一个地方（被观察的对象）进行，而且我们也不用纠结嵌套的 delegate 回调。
 
 ## 总结
-我们已经看到一些用来创建更小巧的 view controllers 的技术。我们并不是想把这些技术应用到每一个可能的角落，只是我们有一个目标：写可维护的代码。知道这些模式后，我们就更有可能把那些笨重的 view controllers 变得更整洁。
+1. 我们已经看到一些用来创建更小巧的 view controllers 的技术。我们并不是想把这些技术应用到每一个可能的角落，只是我们有一个目标：写可维护的代码。知道这些模式后，我们就更有可能把那些笨重的 `view controllers` 变得更整洁。
+2. 关于瘦身VC很容易想到一点是从VC中抽离`tableView`的表示逻辑。这种思想其实与最近火热的[MVVM](http://www.cnblogs.com/ludashi/p/4211556.html)设计模式相通。就是把**"逻辑部分"尽量移到Model层**, 你可以认为它是一个中间层 , 所谓"逻辑部分"可以是各种delegate,网络请求,缓存,数据库,coredata等等等等 , 而controller正是用来组织串联他们，使用block，代理等通信使得整个程序走通。
+3. **把TableView从ViewController中抽出来**
+4. UITableView可以说是iOS界面开发中用的最广泛的组件，就我自己做过的项目而言，绝大部份ViewController都是在围绕tableViewDelegate 和 UITableViewDataSource 中的方法打交道。 
+5. 当需要将一个数组映射到一个tableView进行显示，这种一一对应关系可以单独写一个类`ArrayDataSource`，使用block或者delegate设置cell。ArrayDataSource类完全可以复用到任何需要将一个数组的内容映射到一个tableView的场景。 `ArrayDataSource`中声明block(cell,item)来初始化cell，block实现方式（item和cell如何对应）则可以在 `cell+Configure` 的category中声明。使用`ArrayDataSource`，在`ViewController`中执行`setUpTableView`即可。`setUpTableView`中实现`block`（可以是执行configure方法的方式）。使用cell类category的方式是为了避免向 `data source` 暴露 cell 的设计,说白了是为了更好得分离 view 和 model 层。
+6. MVVM缺点：双向绑定导致 bug 难以调试、消耗更多内存、要引入更多复杂框架。
+    
 
 
