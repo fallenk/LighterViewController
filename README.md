@@ -9,7 +9,7 @@ Target:为了提升iOS思想
 ## 各个模块分离详解
 ### 把 Data Source 和其他 Protocols 分离出来
 1. 把 `UITableViewDataSource` 的代码提取出来放到一个单独的类中，是为 view controller 瘦身的强大技术之一。当你多做几次，你就能总结出一些模式，并且创建出可复用的类。
-3. 举个例，在示例项目中，有个 `PhotosViewController` 类，它有以下几个方法：
+2. 举个例，在示例项目中，有个 `PhotosViewController` 类，它有以下几个方法：
 
 ```
 # pragma mark Pragma
@@ -128,7 +128,7 @@ self.tableView.dataSource = photosArrayDataSource;
 ### 把 View 代码移到 View 层
 不应该在 view controller 中构建复杂的 view 层次结构。你可以使用 `Interface Builder` 或者把 views 封装到一个 UIView 子类当中。例如，如果你要创建一个选择日期的控件，把它放到一个名为 DatePickerView 的类中会比把所有的事情都在 `view controller` 中做好好得多。再一次，这样增加了可复用性并保持了简单。
 
-![](https://objccn.io/images/issues/issue-1/photocell.png)
+![](https://github.com/fallenk/LighterViewController/blob/master/Doc/photocell.png)
 就像你看到的那样，我们在 view（我们没有在这个 nib 上使用 File's Owner 对象）上面创建了 properties，然后连接到指定的 subviews。这种技术同样适用于其他自定义的 views。
 
 ### 通讯
