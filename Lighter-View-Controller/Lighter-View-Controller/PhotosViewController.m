@@ -54,7 +54,10 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
     ///Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为服务层或者仓库。
     NSArray *photos = [AppDelegate sharedDelegate].store.sortedPhotos;
 #warning 2. init Data Source
-    self.arrayDataSource = [[KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:tableViewCellConfigureBlock];
+    self.arrayDataSource = [[KFArrayDataSource alloc] initWithArrayDataSource:photos cellIndentifier:PhotoCellIdentifier configureCellBlock:^(PhotoCell *cell, Photo* photo) {
+        [cell configureForPhoto:photo];
+    };
+];
 
 #warning 1. 把 Data Source 和其他 Protocols 分离出来
     self.tableView.dataSource = self.arrayDataSource;
